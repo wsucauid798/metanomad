@@ -1,0 +1,42 @@
+.box {
+  height: 200px;
+  width: 200px;
+}
+
+.box .group {
+  height: 200px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 202px;
+}
+
+.box .overlap-group {
+  background-color: #ffffff80;
+  border-radius: 20px;
+  height: 200px;
+  position: relative;
+  width: 200px;
+}
+
+.box .rectangle {
+  height: 120px;
+  left: 40px;
+  object-fit: cover;
+  position: absolute;
+  top: 40px;
+  width: 120px;
+}
+
+.box .text-wrapper {
+  color: #6e6e6e;
+  font-family: "Alibaba PuHuiTi 3.0-75SemiBold", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  left: 54px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 172px;
+}

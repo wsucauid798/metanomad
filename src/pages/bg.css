@@ -1,0 +1,90 @@
+.group {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  /* background: #aaa; */
+  overflow: hidden;
+}
+
+.center-point {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  /* background: #fff; */
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 20s linear infinite;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+  /* filter: blur(100px); */
+  mix-blend-mode: screen;
+}
+
+.circle-1 {
+  width: 300px;
+  height: 300px;
+  background: #fef8ae;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(400px);
+}
+
+.circle-2 {
+  width: 250px;
+  height: 250px;
+  background: #ffd3e2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(72deg) translateX(400px);
+}
+
+.circle-3 {
+  width: 200px;
+  height: 200px;
+  background: #c5f4f7;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(144deg) translateX(400px);
+}
+
+.circle-4 {
+  width: 350px;
+  height: 350px;
+  background: #d0f5b1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(216deg) translateX(400px);
+}
+
+.circle-5 {
+  width: 280px;
+  height: 280px;
+  background: #e0d6ff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(288deg) translateX(400px);
+}

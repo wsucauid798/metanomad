@@ -1,0 +1,35 @@
+.start-page {
+  /* background-image: url('../assets/bg1.png');  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 0;
+  padding: 0;
+
+  background-size: 100% 100%;           /* 保持比例，全覆盖 */
+  background-repeat: no-repeat;     /* 不重复 */
+  background-position: top left;      /* 居中对齐 */
+  background-attachment: scroll;     /* 固定背景 */
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+font-size: 1.5rem;
+color: #303030;
+margin: 0.5em 0;
+font-family: 'Arial', sans-serif;
+}
+
+.multiline {
+  font-size: 1rem;
+line-height: 1.5;
+}

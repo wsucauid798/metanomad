@@ -1,0 +1,62 @@
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 0;
+  padding: 0;
+
+
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-paragraph {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 30px;      /* 不再留多余空间给下面的标题 */
+  font-size: 15px;
+  color: #969696;
+}
+
+.question-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10px;        /* 控制与段落之间的距离，数值可微调 */
+  margin-bottom: 300px;    /* 保持原有页面结构 */
+  text-align: center;
+}
+
+.green-screen {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #ace3c1 60%,
+    #52A773 100%
+  );
+}
+
+.red-screen {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #e3bae5 60%,
+    #cf94e8 100%
+  );
+}
+
+.blue-screen {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #a5d6e3 60%,
+    #38b2d1 100%
+  );
+}

@@ -1,0 +1,56 @@
+
+.fancy-button {
+  background-color: #fffdf4;
+  border: none;
+  border-radius: 15px;
+  height: 32px;
+  width: 72px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fancy-button:hover {
+  /* background-color: #e4e0c9; Change background color on hover */
+  transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+.fancy-button:active {
+  transform: scale(0.95); /* Scale down the button on click */
+}
+.fancy-button .text-wrapper {
+  color: #191817;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  position: static;
+  height: auto;
+  width: auto;
+}
+
+.fancy-button::before {
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  background: linear-gradient(
+    270deg,
+    rgba(244, 163, 168, 1) 0%,
+    rgba(248, 225, 197, 1) 21%,
+    rgba(245, 237, 163, 1) 47%,
+    rgba(163, 214, 224, 1) 74%,
+    rgba(212, 167, 245, 1) 100%
+  );
+  border-radius: 15px;
+  content: "";
+  inset: 0;
+  mask-composite: exclude;
+  padding: 2px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
