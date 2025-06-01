@@ -10,38 +10,31 @@
 }
 
 .background-video {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: auto;
-  transform: translateY(-50%);
-  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   z-index: -1;
 }
-
 
 /* genForest.css */
 
 .gen-container {
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
   margin: 0;
-
   padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
-  position: fixed;
-    top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
   z-index: 1;
 }
 
